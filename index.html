@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+	<!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Bank Tool: 一款银行自动转账及查账辅助操作（自动化）软件" />
+		<meta name="keywords" content="银行自动转账工具," />
+
+		<!--&lt;!&ndash; 搜索引擎验证 &ndash;&gt;-->
+		<!--<meta name="baidu-site-verification" content="3wiVWg7AdT" />-->
+		<!--<meta name="360-site-verification" content="02746194ea28ec4b021636a7edf0609e" />-->
+		
+		<!-- QQ分享卡片信息 -->
+		<meta itemprop="name" content="Bank Tool" />
+		<meta itemprop="description" content="Bank Tool是一款银行自动转账及查账辅助操作（自动化）软件" />
+		<meta itemprop="image" content="https://cl.ly/6f6a82a70067/logo.png" />
+
+		<title>Bank Tool &mdash; 一款银行自动转账及查账辅助操作（自动化）软件.</title>
+
+		<link rel="shortcut icon" href="https://cl.ly/6f6a82a70067/logo.png">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/looly/hutool-site/css/animate.min.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/looly/hutool-site/css/icomoon.min.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-line-icons@2.4.1/css/simple-line-icons.min.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/magnific-popup.min.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+		<!-- highlight.js -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.13.1/styles/zenburn.min.css">
+		<!-- Theme style -->
+		<!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/looly/hutool-site/css/style.min.css">-->
+		<link rel="stylesheet" href="./css/style.css">
+
+		<!-- Modernizr JS -->
+		<script src="https://cdn.jsdelivr.net/gh/looly/hutool-site/js/modernizr-2.6.2.min.js"></script>
+		<!-- FOR IE9 below -->
+		<!--[if lt IE 9]>
+			<script src="https://cdn.jsdelivr.net/gh/looly/hutool-site/js/respond.min.js"></script>
+		<![endif]-->
+
+
+		<!-- 百度统计 -->
+		<!--<script>-->
+			<!--var _hmt = _hmt || [];-->
+			<!--(function() {-->
+			  <!--var hm = document.createElement("script");-->
+			  <!--hm.src = "https://hm.baidu.com/hm.js?f2c884fc06fca522c4105429259b8a73";-->
+			  <!--var s = document.getElementsByTagName("script")[0]; -->
+			  <!--s.parentNode.insertBefore(hm, s);-->
+			<!--})();-->
+		<!--</script>-->
+	</head>
+
+	<body>
+
+		<!-- Loader -->
+		<div class="fh5co-loader"></div>
+		<div class="fh5co-page" id="app">
+
+			<div id="fh5co-container">
+
+
+				<div id="fh5co-home" class="js-fullheight-home" data-section="home" style="background-image: url(https://cl.ly/22d861f41d9f/home.png);" data-stellar-background-ratio="0.5">
+					<div class="container">
+						<div class="col-md-6">
+							<div class="js-fullheight-home fh5co-copy">
+								<div class="js-fullheight-home fh5co-copy-inner" style="padding-left: 11%; background-color: rgba(0,106,180,0.4)">
+									<h1>
+										<b style="font-size: 100%;margin-left:-10px">Bank Tool</b>
+										<span style="font-size: 50%">v{{version}}</span>
+									</h1>
+									<h2 style="color: #fff">一款银行自动转账及查账辅助操作（自动化）软件</h2>
+
+									<div style="margin-top: 100px">
+										<div>
+											<a href="admin/" target="_blank" class="btn btn-primary btn-outline">登陆</a>
+											<a href="admin/" target="_blank" class="btn btn-primary btn-outline">注册</a>
+
+											<a href="docs/" target="_blank" class="btn btn-primary btn-outline"><b>使用文档</b></a>
+											<a href="docs/#/API/下单接口" target="_blank" class="btn btn-primary btn-outline"><b>API文档</b></a>
+										</div>
+										<br/>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- 导航 -->
+				<div class="js-sticky">
+					<div class="fh5co-main-nav">
+						<div class="container">
+							<div class="fh5co-menu-1">
+								<span>
+									<img src="images/transfer.svg" style="width: 50px;margin-right: 50px;"/>
+								</span>
+								<a href="#" data-nav-section="home">主页</a>
+								<a href="#" data-nav-section="start">开始</a>
+								<a href="#" data-nav-section="docs">使用</a>
+
+								<a href="#" data-nav-section="team">价格</a>
+								<a href="#" data-nav-section="video">视频演示</a>
+
+								<a href="#" data-nav-section="contact">技术支持</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="fh5co-about" data-section="start">
+					<div class="fh5co-2col">
+						<div class="fh5co-2col-inner left">
+
+							<div class="fh5co-tabs-container">
+								<ul class="fh5co-tabs fh5co-three">
+									<li class="active">
+										<a href="#" data-tab="marketing">简介</a>
+									</li>
+
+									<li>
+										<a href="#" data-tab="analysis">支持银行</a>
+									</li>
+
+									<li>
+										<a href="#" data-tab="strategy">使用准备</a>
+									</li>
+								</ul>
+
+								<div class="fh5co-tab-content active" data-tab-content="marketing">
+									<p>Bank Tool是一款银行自动转账及查账辅助操作（自动化）软件</p>
+									<p>全自动帮你完成，重复而繁重的操作</p>
+									<ul class="checked">
+										<li>独立管理后台</li>
+										<li>PC自动辅助操作软件</li>
+										<li>支持API对接</li>
+										<li>自动回调通知 </li>
+									</ul>
+								</div>
+
+								<div class="fh5co-tab-content" data-tab-content="analysis">
+									<p>不同自动辅助工具不同，目前支持一下银行：</p>
+									<ul class="checked">
+										<li>中国建设银行 </li>
+										<li>中国农业银行 </li>
+										<li>中国工商银行 </li>
+										<li>中国银行 		</li>
+										<li>中国交通银行 	</li>
+									</ul>
+
+								</div>
+
+								<div class="fh5co-tab-content" data-tab-content="strategy">
+									<div>使用前要准备一些工具:</div>
+									<ul class="checked">
+										<li>注册账号</li>
+										<li>下载自动辅助工具,在windows系统下安装</li>
+										<li>银行账户</li>
+										<li>银行U盾</li>
+									</ul>
+									<p>
+										<a href="http://search.maven.org/#search%7Cga%7C1%7Ca%3A%22hutool-all%22" class="btn btn-primary btn-outline" target="_blank">使用文档</a>
+									</p>
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+					<div class="fh5co-2col fh5co-text" style="margin-top: 100px;">
+
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/LwidUjy7Vac" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+						<!--<img src="https://cdn.jsdelivr.net/gh/looly/hutool-site/images/code_example.gif" style="margin-left: 10%;border: 5px solid" />-->
+					</div>
+				</div>
+
+				<div id="fh5co-services" data-section="docs">
+					<!--<div class="fh5co-video">-->
+						<!--<a href="https://player.bilibili.com/player.html?aid=56027976&cid=97935200&page=1" class="popup-vimeo">-->
+							<!--<i class="icon-play2"></i>-->
+						<!--</a>-->
+						<!--<span>Watch Video</span>-->
+					<!--</div>-->
+
+					<div class="container" onclick="docs()" >
+						<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+							<h1>Bank Tool 如何使用</h1>
+							<p>Bank Tool 支持API 对接,通过API 接口下发 转账、查询命令，PC辅助工具自动完成，转账、查询操作并且通知服务器结果</p>
+							<img src="images/zz.png" class="img-responsive" alt="">
+						</div>
+
+
+						<div class="col-md-4" onclick="docs()" >
+							<div class="service">
+								<div class="icon"><i class="icon-user"></i></div>
+								<h3>1.注册</h3>
+								<p>注册账号，配置账号信息</p>
+							</div>
+						</div>
+
+						<div class="col-md-4" onclick="docs()" >
+							<div class="service">
+								<div class="icon"><i class="icon-screen-desktop"></i></div>
+								<h3>2.安装自动辅助软件</h3>
+								<p>在windows电脑上面，下载安装自动辅助软件，并且登录</p>
+							</div>
+						</div>
+
+
+						<div class="col-md-4" onclick="docs()" >
+							<div class="service">
+								<div class="icon"><i class="icon-shuffle"></i></div>
+								<h3>3.测试</h3>
+								<p>通过服务器测试页面测试,检测配置信息是否正确</p>
+							</div>
+						</div>
+
+
+
+						<div class="col-md-4" onclick="docs()" >
+							<div class="service">
+								<div class="icon"><i class="icon-settings"></i></div>
+								<h3>4.集成项目</h3>
+								<p>参考API文档集成到您自己的系统中</p>
+							</div>
+						</div>
+
+						<!--<div class="col-md-4">-->
+							<!--<div class="service">-->
+								<!--<div class="icon"><i class="icon-note"></i></div>-->
+								<!--<h3>日志工具</h3>-->
+								<!--<p>Hutool的日志功能，通过抽象Log接口，提供对Slf4j、LogBack、Log4j、JDK-Logging的全面兼容支持。</p>-->
+							<!--</div>-->
+						<!--</div>-->
+						<!--<div class="col-md-4">-->
+							<!--<div class="service">-->
+								<!--<div class="icon"><i class="icon-support"></i></div>-->
+								<!--<h3>JDBC工具类（DB模块）</h3>-->
+								<!--<p>通过db模块，提供对MySQL、Oracle等关系型数据库的JDBC封装，借助ActiveRecord思想，大大简化数据库操作。</p>-->
+							<!--</div>-->
+						<!--</div>-->
+
+
+						<div class="col-md-12 text-center" >
+							<p>Bank Tool的更多功能，期待你的探索：</p>
+							<p>
+								<a href="docs/" target="_blank" class="btn btn-primary btn-outline">参考文档</a>
+								<a href="docs/#/API/下单接口" target="_blank" class="btn btn-primary btn-outline" style="margin-left: 60px;">API 文档</a>
+							</p>
+						</div>
+
+					</div>
+
+				</div>
+				<!-- END fh5co-services -->
+
+				<div id="fh5co-team" data-section="team">
+					<div class="container">
+						<div class="col-md-12 text-center fh5co-heading">
+							<h1>价格</h1>
+							<p>提供不同使用方式</p>
+						</div>
+
+
+                        <div class="col-md-4">
+                            <div class="person">
+                                <!--<img src="https://cdn.jsdelivr.net/gh/looly/hutool-site/images/team/chinaboy.jpg" alt="" class="img-responsive">-->
+                                <h3>系统租赁费用</h3>
+                                <h4>按照 用户的量收费</h4>
+                                <p>根据用户需求量收费 具体联系客服</p>
+                            </div>
+                        </div>
+
+						<div class="col-md-4">
+							<div class="person">
+								<!--<img src="https://cdn.jsdelivr.net/gh/looly/hutool-site/images/team/me.jpg" alt="" class="img-responsive">-->
+								<h3>PC 打包</h3>
+								<h4>PC自动辅助工具 打包出售</h4>
+								<p>PC自动辅助工具对接到您自己服务器 请按照文档对接 如果有特殊需求请联系技术</p>
+								<p>PC V1.0价格：7000￥</p>
+								<p>PC V2.0价格：8000￥</p>
+
+								<ul class="social">
+									<li>
+										<a href="/pc_docs" target="_blank">
+                                            <i class="icon-docs">使用文档</i>
+                                        </a>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-md-4">
+							<div class="person">
+								<!--<img src="https://cdn.jsdelivr.net/gh/looly/hutool-site/images/team/shenshanmanong.jpg" alt="" class="img-responsive">-->
+								<h3>PC 源码</h3>
+								<h4>PC自动辅助工具 源码出售</h4>
+								<p>提供使用文档、代码文档、接口文档，以及远程协助</p>
+
+
+								<p>PC V1.0价格：12000￥</p>
+								<p>PC V2.0价格：13000￥</p>
+
+
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="person">
+								<!--<img src="https://cdn.jsdelivr.net/gh/looly/hutool-site/images/team/chinaboy.jpg" alt="" class="img-responsive">-->
+								<h3>系统源码</h3>
+								<h4>整套系统源码出售</h4>
+								<p>包含PC 源码、服务器源码，提供使用文档、代码文档、接口文档，以及远程协助</p>
+
+								<p>PC V2.0 价格：19000￥</p>
+
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+
+				<!--视频演示-->
+				<div id="fh5co-video" data-section="video">
+					<div class="container">
+						<div class="col-md-12 text-center fh5co-heading">
+							<h1>操作演示视频</h1>
+							<p>视频来源youtube ,请准备梯子</p>
+						</div>
+
+						<div class="col-md-4">
+							<div class="person">
+								<h4>银行自动转账系统 使用 1. 创建账号</h4>
+								<iframe  src="https://www.youtube.com/embed/gPHeDojfEdo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
+						</div>
+
+						<div class="col-md-4">
+							<div class="person">
+
+								<h4>银行自动转账系统 使用 2. pc配置</h4>
+
+								<iframe src="https://www.youtube.com/embed/GoMP47SwILY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+							</div>
+						</div>
+
+
+						<div class="col-md-4">
+							<div class="person">
+
+								<h4>银行自动转账系统 使用 3.测试</h4>
+
+								<iframe  src="https://www.youtube.com/embed/HvNBla_XSNU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+							</div>
+						</div>
+
+
+
+						<div class="col-md-4">
+							<div class="person">
+
+								<h4>银行自动转账系统 使用 4. API对接</h4>
+
+								<iframe  src="https://www.youtube.com/embed/1iePZJ0E0RA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+							</div>
+						</div>
+
+						<div class="col-md-4">
+							<div class="person">
+
+								<h4>银行自动转账系统 使用 5.手动下单完整测试</h4>
+
+								<iframe src="https://www.youtube.com/embed/5AnVOAMdMzk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+							</div>
+						</div>
+
+
+						<div class="col-md-4">
+							<div class="person">
+
+								<h4>银行自动转账系统 使用 6.  高并发压力测试</h4>
+								<iframe  src="https://www.youtube.com/embed/LwidUjy7Vac" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
+						</div>
+
+						<div class="col-md-4">
+							<div class="person">
+
+								<h4>银行自动转账系统 使用 7. 自动点击硬件设备</h4>
+								<iframe  src="https://www.youtube.com/embed/udYnZppSghc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+
+
+				<!-- END fh5co-team -->
+				<div id="fh5co-contact" data-section="contact">
+					<div class="container">
+						<div class="col-md-12 text-center fh5co-heading">
+							<h2>技术支持</h2>
+							<p>如果你有需要，或者遇到什么问题，可以联系我们! </p>
+
+						</div>
+						<div style="text-align: center;">
+							<div class="col-md-3">
+								<i class="icon-qq"></i>
+								<a href="" target="_blank">3609451924</a>
+
+							</div>
+							<div class="col-md-3">
+								<i class="icon-mail2"></i>
+								<a href="mailto:dingdingdongdong001@gmail.com" target="_blank">dingdingdongdong001@gmail.com</a>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+
+
+
+				<footer id="fh5co-footer">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6">
+								<p>
+									<small>
+										<br/>&copy; 2020 Bank Tool Project. All Rights Reserved.
+										<br/>Designed by  Orange
+									</small>
+								</p>
+							</div>
+							<!--<div class="col-md-6">-->
+								<!--<ul class="fh5co-social">-->
+									<!--<li><a href="http://www.luxiaolei.com/" target="_blank"><i class="icon-home"></i></a></li>-->
+									<!--<li><a href="http://weibo.com/loolly" target="_blank"><i class="icon-weibo"></i></a></li>-->
+									<!--<li><a href="https://github.com/looly/hutool" target="_blank"><i class="icon-github"></i></a></li>-->
+								<!--</ul>-->
+							<!--</div>-->
+						</div>
+					</div>
+				</footer>
+			</div>
+			<!-- END fh5co-container -->
+		</div>
+		<!-- END fh5co-pages -->
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+	
+	<!-- vue -->
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.min.js"></script>
+	<!-- jQuery -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js"></script>
+	<!-- Waypoints -->
+	<script src="https://cdn.jsdelivr.net/npm/waypoints@4.0.1/lib/jquery.waypoints.min.js"></script>
+	<!-- Stellar Parallax -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery.stellar@0.6.2/jquery.stellar.min.js"></script>
+	<!-- Magnific Popup -->
+	<script src="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/looly/hutool-site/js/magnific-popup-options.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/highlight.js@9.13.1/lib/highlight.min.js"></script>
+	<!-- Bootstrap -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+	<!-- Main JS -->
+	<script src="https://cdn.jsdelivr.net/gh/looly/hutool-site/js/main.min.js"></script>
+	<!-- version -->
+	<script src="https://cdn.jsdelivr.net/gh/looly/hutool@latest/docs/js/version.js"></script>
+	<script>
+        function docs(){
+            window.location.href="docs/";
+        }
+
+		var app = new Vue({
+			el: '#app',
+			data: {
+				version: '2.0'
+			}
+		});
+
+
+	</script>
+
+	</body>
+</html>
