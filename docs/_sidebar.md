@@ -14,4 +14,9 @@
   * [4.回调callback](API/回调callback.md)
   * [5.签名](API/签名.md)
   * [6.状态码](API/状态码.md)
+
+* [PC打包对接文档](PC/README.md) 
+  * [1. 登陆(或查询配置信息) ->  返回 mqtt地址](PC/查询配置信息.md)
+  * [2. PC 与 与mqtt 通讯](PC/mqtt消息.md)
+  * [3. 转账完成 回调通知服务器完成](PC/转账完成回调.md)
 * [更新记录](CHANGELOG.md)
