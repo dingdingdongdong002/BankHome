@@ -9,7 +9,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="Bank Tool: 一款银行自动转账及查账辅助操作（自动化）软件" />
+		<meta name="description" content="Bank Tools: 一款银行自动转账及查账辅助操作（自动化）软件" />
 		<meta name="keywords" content="银行自动转账工具," />
 
 		<!--&lt;!&ndash; 搜索引擎验证 &ndash;&gt;-->
@@ -17,11 +17,11 @@
 		<!--<meta name="360-site-verification" content="02746194ea28ec4b021636a7edf0609e" />-->
 		
 		<!-- QQ分享卡片信息 -->
-		<meta itemprop="name" content="Bank Tool" />
-		<meta itemprop="description" content="Bank Tool是一款银行自动转账及查账辅助操作（自动化）软件" />
+		<meta itemprop="name" content="Bank Tools" />
+		<meta itemprop="description" content="Bank Tools是一款银行自动转账及查账辅助操作（自动化）软件" />
 		<meta itemprop="image" content="https://cl.ly/6f6a82a70067/logo.png" />
 
-		<title>Bank Tool &mdash; 一款银行自动转账及查账辅助操作（自动化）软件.</title>
+		<title>Bank Tools &mdash; 一款银行自动转账及查账辅助操作（自动化）软件.</title>
 
 		<link rel="shortcut icon" href="https://cl.ly/6f6a82a70067/logo.png">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/looly/hutool-site/css/animate.min.css">
@@ -70,10 +70,13 @@
 							<div class="js-fullheight-home fh5co-copy">
 								<div class="js-fullheight-home fh5co-copy-inner" style="padding-left: 11%; background-color: rgba(0,106,180,0.4)">
 									<h1>
-										<b style="font-size: 100%;margin-left:-10px">Bank Tool</b>
+										<b style="font-size: 100%;margin-left:-10px">Bank Tools</b>
 										<span style="font-size: 50%">v{{version}}</span>
 									</h1>
 									<h2 style="color: #fff">一款银行自动转账及查账辅助操作（自动化）软件</h2>
+									<br>
+									<h5 style="color: #fff">支持window PC 自动转账</h5>
+									<h5 style="color: #fff">支持安卓手机 自动转账</h5>
 
 									<div style="margin-top: 100px">
 										<div>
@@ -123,48 +126,55 @@
 									</li>
 
 									<li>
-										<a href="#" data-tab="analysis">支持银行</a>
+										<a href="#" data-tab="analysis">windows PC 版本</a>
 									</li>
 
 									<li>
-										<a href="#" data-tab="strategy">使用准备</a>
+										<a href="#" data-tab="strategy">安卓 手机版本</a>
 									</li>
 								</ul>
 
 								<div class="fh5co-tab-content active" data-tab-content="marketing">
-									<p>Bank Tool是一款银行自动转账及查账辅助操作（自动化）软件</p>
+									<p>Bank Tools是一款银行自动转账及查账辅助操作（自动化）软件</p>
 									<p>全自动帮你完成，重复而繁重的操作</p>
 									<ul class="checked">
 										<li>独立管理后台</li>
-										<li>PC自动辅助操作软件</li>
+										<li>支持 windows PC自动辅助操作软件</li>
+										<li>支持 安卓 手机自动辅助操作软件</li>
 										<li>支持API对接</li>
 										<li>自动回调通知 </li>
 									</ul>
 								</div>
 
 								<div class="fh5co-tab-content" data-tab-content="analysis">
-									<p>不同自动辅助工具不同，目前支持一下银行：</p>
+									<h5> 测试准备 </h5>
 									<ul class="checked">
-										<li>中国建设银行 </li>
-										<li>中国农业银行 </li>
+										<li>U盾 </li>
+										<li>USB易键鼠标 </li>
+									</ul>
+									<h5> 支持银行 </h5>
+									<ul class="checked">
+										<li>中国建设银行 成功率 99% </li>
+										<li>中国农业银行 成功率 99% </li>
 										<li>中国工商银行 </li>
-										<li>中国银行 		</li>
-										<li>中国交通银行 	</li>
+										<li>中国银行 	 </li>
 									</ul>
 
 								</div>
 
 								<div class="fh5co-tab-content" data-tab-content="strategy">
-									<div>使用前要准备一些工具:</div>
+									<h5> 安卓 手机自动转账: </h5>
 									<ul class="checked">
-										<li>注册账号</li>
-										<li>下载自动辅助工具,在windows系统下安装</li>
-										<li>银行账户</li>
-										<li>银行U盾</li>
+										<li>无须 root</li>
+										<li>无须 xposed</li>
+										<li>无须手机一直连接电脑</li>
 									</ul>
-									<p>
-										<a href="http://search.maven.org/#search%7Cga%7C1%7Ca%3A%22hutool-all%22" class="btn btn-primary btn-outline" target="_blank">使用文档</a>
-									</p>
+									<h5> 支持银行: </h5>
+									<ul class="checked">
+										<li>建设银行</li>
+										<li>中国银行</li>
+										<li>支付宝转卡</li>
+									</ul>
 								</div>
 
 							</div>
@@ -189,46 +199,48 @@
 
 					<div class="container" onclick="docs()" >
 						<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
-							<h1>Bank Tool 如何使用</h1>
-							<p>Bank Tool 支持API 对接,通过API 接口下发 转账、查询命令，PC辅助工具自动完成，转账、查询操作并且通知服务器结果</p>
+							<h1>Bank Tools 如何使用</h1>
+							<h4> Bank Tools 工作流程: </h4>
 							<img src="images/zz.png" class="img-responsive" alt="">
 						</div>
 
 
 						<div class="col-md-4" onclick="docs()" >
 							<div class="service">
-								<div class="icon"><i class="icon-user"></i></div>
-								<h3>1.注册</h3>
-								<p>注册账号，配置账号信息</p>
-							</div>
-						</div>
-
-						<div class="col-md-4" onclick="docs()" >
-							<div class="service">
 								<div class="icon"><i class="icon-screen-desktop"></i></div>
-								<h3>2.安装自动辅助软件</h3>
-								<p>在windows电脑上面，下载安装自动辅助软件，并且登录</p>
+
+								<h3>Windows PC 版本使用</h3>
+
 							</div>
 						</div>
 
 
 						<div class="col-md-4" onclick="docs()" >
 							<div class="service">
-								<div class="icon"><i class="icon-shuffle"></i></div>
-								<h3>3.测试</h3>
-								<p>通过服务器测试页面测试,检测配置信息是否正确</p>
+								<div class="icon"><i class="icon-mobile-phone"></i></div>
+								<h3>安卓手机版本使用</h3>
+								<!--<p>在windows电脑上面，下载安装自动辅助软件，并且登录</p>-->
 							</div>
 						</div>
 
 
+						<!--<div class="col-md-4" onclick="docs()" >-->
+							<!--<div class="service">-->
+								<!--<div class="icon"><i class="icon-shuffle"></i></div>-->
+								<!--<h3>3.测试</h3>-->
+								<!--<p>通过服务器测试页面测试,检测配置信息是否正确</p>-->
+							<!--</div>-->
+						<!--</div>-->
 
-						<div class="col-md-4" onclick="docs()" >
-							<div class="service">
-								<div class="icon"><i class="icon-settings"></i></div>
-								<h3>4.集成项目</h3>
-								<p>参考API文档集成到您自己的系统中</p>
-							</div>
-						</div>
+
+
+						<!--<div class="col-md-4" onclick="docs()" >-->
+							<!--<div class="service">-->
+								<!--<div class="icon"><i class="icon-settings"></i></div>-->
+								<!--<h3>4.集成项目</h3>-->
+								<!--<p>参考API文档集成到您自己的系统中</p>-->
+							<!--</div>-->
+						<!--</div>-->
 
 						<!--<div class="col-md-4">-->
 							<!--<div class="service">-->
@@ -247,7 +259,7 @@
 
 
 						<div class="col-md-12 text-center" >
-							<p>Bank Tool的更多功能，期待你的探索：</p>
+							<p>Bank Tools的更多功能，期待你的探索：</p>
 							<p>
 								<a href="docs/" target="_blank" class="btn btn-primary btn-outline">参考文档</a>
 								<a href="docs/#/API/下单接口" target="_blank" class="btn btn-primary btn-outline" style="margin-left: 60px;">API 文档</a>
@@ -262,40 +274,42 @@
 				<div id="fh5co-team" data-section="team">
 					<div class="container">
 						<div class="col-md-12 text-center fh5co-heading">
-							<h1>价格</h1>
-							<p>提供不同使用方式</p>
+							<h1>出售价格</h1>
 						</div>
 
 
-						<h3 align="center">服务器</h3>
+						<h3 align="center">服务器(只需一套支持全部通道)</h3>
 						<table border="1" height="500" width="1000" cellspacing="0" align="center">
 							<tr align="center">
 								<td>软件项目</td>
-								<td>V1.0</td>
-								<td>V2.0</td>
-								<td>V3.0</td>
-								<td>V4.0(开发中)</td>
-								<td>备注</td>
-							</tr>
-							<tr align="center">
 								<td>服务器打包(支持全部银行)</td>
-								<td>6000</td>
-								<td>6000</td>
-								<td>7000</td>
-								<td></td>
-								<td></td>
+								<td>服务器源码(支持全部银行)</td>
+								<td>版本功能</td>
 							</tr>
 							<tr align="center">
-								<td>服务器源码(支持全部银行)</td>
-								<td>12000</td>
-								<td>12000</td>
-								<td>14000</td>
-								<td></td>
-								<td></td>
+								<td>V1.0</td>
+								<td>6K</td>
+								<td>12K</td>
+								<td>脚本操作键盘</td>
 							</tr>
+
+							<tr align="center">
+								<td>V2.0</td>
+								<td>6K</td>
+								<td>12K</td>
+								<td>USB硬件操作键盘</td>
+							</tr>
+
+							<tr align="center">
+								<td>V3.0</td>
+								<td>7K</td>
+								<td>14K</td>
+								<td>批量转账</td>
+							</tr>
+
 						</table>
 
-						<h3 align="center">Windows PC 工具</h3>
+						<h3 align="center">Windows PC 版本</h3>
 						<table border="1" height="500" width="1000" cellspacing="0" align="center">
                             <tr align="center">
                                 <td>软件项目</td>
@@ -305,78 +319,36 @@
                                 <td>V4.0(开发中)</td>
                                 <td>备注</td>
                             </tr>
-                            <tr align="center">
-                                <td>服务器(支持全部银行)</td>
-                                <td>6000</td>
-                                <td>6000</td>
-                                <td>6000</td>
-                                <td></td>
-                                <td></td>
 
-                            </tr>
                             <tr align="center">
                                 <td>PC源码(建设银行)</td>
-                                <td>12000</td>
-                                <td>14000</td>
-                                <td>15000</td>
+                                <td>12K</td>
+                                <td>14K</td>
+                                <td>15K</td>
                                 <td>开发中</td>
                                 <td></td>
                             </tr>
-                            <tr align="center">
-                                <td>PC打包(建设银行)</td>
-                                <td>6000</td>
-                                <td>7000</td>
-                                <td>7500</td>
-                                <td>开发中</td>
-                                <td></td>
-                            </tr>
+
                             <tr align="center">
                                 <td>PC源码(农业银行)</td>
-                                <td>12000</td>
-                                <td>14000</td>
-                                <td>15000</td>
-                                <td>开发中</td>
-                                <td></td>
-                            </tr>
-                            <tr align="center">
-                                <td>PC打包(农业银行)</td>
-                                <td>6000</td>
-                                <td>7000</td>
-                                <td>7500</td>
+                                <td>12K</td>
+                                <td>14K</td>
+                                <td>15K</td>
                                 <td>开发中</td>
                                 <td></td>
                             </tr>
 
                             <tr align="center">
                                 <td>PC源码(工商银行)</td>
-                                <td>16000</td>
-                                <td>16000</td>
+                                <td>16K</td>
+                                <td>16K</td>
                                 <td>开发中</td>
                                 <td>开发中</td>
                                 <td>工商 银行需要 验证码 故而 需要 百度图片识别 key,客户自己申请</td>
                             </tr>
-
-                            <tr align="center">
-                                <td>PC打包(工商银行)</td>
-                                <td>8000</td>
-                                <td>8000</td>
-                                <td>开发中</td>
-                                <td>开发中</td>
-                                <td>工商 银行需要 验证码 故而 需要 百度图片识别 key,客户自己申请</td>
-                            </tr>
-
 
                             <tr align="center">
                                 <td>PC源码(招商银行)</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-
-                            <tr align="center">
-                                <td>PC打包(招商银行)</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -388,140 +360,25 @@
                             <tr align="center">
                                 <td>PC源码(平安银行)</td>
                                 <td></td>
-                                <td>16000</td>
+                                <td>16K</td>
                                 <td></td>
                                 <td></td>
                                 <td>平安 银行需要 验证码 故而 需要 百度图片识别 key,客户自己申请</td>
                             </tr>
 
-                            <tr align="center">
-                                <td>PC打包(平安银行)</td>
-                                <td></td>
-                                <td>8000</td>
-                                <td></td>
-                                <td></td>
-                                <td>平安 银行需要 验证码 故而 需要 百度图片识别 key,客户自己申请</td>
-                            </tr>
-
-
-                            <tr align="center">
-                                <td>PC源码(交通银行)</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-
-                            <tr align="center">
-                                <td>PC打包(交通银行)</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
                         </table>
 
 
-						<h3 align="center">Android 手机 工具</h3>
-						<table border="1" height="500" width="1000" cellspacing="0" align="center">
-							<tr align="center">
-								<td>软件项目</td>
-								<td>V1.0</td>
-								<td>V2.0</td>
-								<td>V3.0</td>
-								<td>V4.0</td>
-								<td>备注</td>
-							</tr>
-							<tr align="center">
-								<td>建设银行(打包)</td>
-								<td>7500</td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-
-							</tr>
-							<tr align="center">
-								<td>建设银行(源码)</td>
-								<td>15000</td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr>
+						<h3 align="center">硬件价格</h3>
+						<table border="1" height="160" width="1000" cellspacing="0" align="center">
 
 							<tr align="center">
-								<td>农业银行(打包)</td>
-								<td>7500</td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-
-							</tr>
-							<tr align="center">
-								<td>农业银行(源码)</td>
-								<td>15000</td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr>
-
-
-							<tr align="center">
-								<td>支付宝转账(打包)</td>
-								<td>7500</td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-
-							</tr>
-							<tr align="center">
-								<td>支付宝转账(源码)</td>
-								<td>15000</td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr>
-
-							<tr align="center">
-								<td>支付宝转卡(打包)</td>
-								<td>7500</td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-
-							</tr>
-							<tr align="center">
-								<td>支付宝转卡(源码)</td>
-								<td>15000</td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr>
-						</table>
-
-
-
-
-
-                        <h3 align="center">硬件价格</h3>
-                        <table border="1" height="160" width="1000" cellspacing="0" align="center">
-
-                            <tr align="center">
-                                <td>硬件</td>
-                                <td>USB 易键鼠(PC控制键盘鼠标)</td>
-                                <td>U盾自动点击 物理按键(低速马达)</td>
+								<td>硬件</td>
+								<td>USB 易键鼠(PC控制键盘鼠标)</td>
+								<td>U盾自动点击 物理按键(低速马达)</td>
 								<td>U盾自动点击 物理按键(往复杆)</td>
 								<td>U盾自动点击 电路板(需要焊接连接按键内外圈)</td>
-                            </tr>
+							</tr>
 
 							<tr align="center">
 								<td>图片</td>
@@ -541,15 +398,18 @@
 								</td>
 							</tr>
 
-                            <tr align="center">
-                                <td>价格</td>
-                                <td>7元/个</td>
+							<tr align="center">
+								<td>价格</td>
+								<td>7元/个</td>
 								<td>50元/个</td>
 								<td>单控 90元/个  双控130元/个</td>
-                                <td>80元/个</td>
-                            </tr>
-                        </table>
+								<td>80元/个</td>
+							</tr>
+						</table>
 
+						<div class="col-md-12 text-center fh5co-heading">
+							<h1>租赁价格</h1>
+						</div>
 
 					</div>
 				</div>
@@ -566,19 +426,16 @@
 
 						<div class="col-md-4">
 							<div class="person">
-								<iframe  src="https://www.youtube.com/embed/gPHeDojfEdo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-								<h4>银行自动转账系统 使用 1. 创建账号</h4>
 
+								<iframe  src="https://www.youtube.com/embed/oJUTc8jTMIk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								<h4>中国银行 安卓手机版本 </h4>
 							</div>
 						</div>
 
 						<div class="col-md-4">
 							<div class="person">
-
-
-								<iframe src="https://www.youtube.com/embed/GoMP47SwILY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-								<h4>银行自动转账系统 使用 2. pc配置</h4>
-
+								<iframe src="https://www.youtube.com/embed/nTlyGFVL_Jw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								<h4>支付宝转卡 手机版本</h4>
 							</div>
 						</div>
 
@@ -586,31 +443,17 @@
 						<div class="col-md-4">
 							<div class="person">
 
+								<iframe  src="https://www.youtube.com/embed/GxFBO2r4_bw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-								<iframe  src="https://www.youtube.com/embed/HvNBla_XSNU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-								<h4>银行自动转账系统 使用 3.测试</h4>
+								<h4>建设银行 手机版本</h4>
 							</div>
 						</div>
 
 
-
 						<div class="col-md-4">
 							<div class="person">
-
-								<iframe  src="https://www.youtube.com/embed/1iePZJ0E0RA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-								<h4>银行自动转账系统 使用 4. API对接</h4>
-							</div>
-						</div>
-
-						<div class="col-md-4">
-							<div class="person">
-
-
-								<iframe src="https://www.youtube.com/embed/5AnVOAMdMzk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-								<h4>银行自动转账系统 使用 5.手动下单完整测试</h4>
+								<iframe  src="https://www.youtube.com/embed/ebKZ2bNMPu0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								<h4>PC 建设银行</h4>
 							</div>
 						</div>
 
@@ -620,16 +463,14 @@
 
 								<iframe  src="https://www.youtube.com/embed/LwidUjy7Vac" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-								<h4>银行自动转账系统 使用 6.  高并发压力测试</h4>
+								<h4>PC 高并发压力测试</h4>
 							</div>
 						</div>
 
 						<div class="col-md-4">
 							<div class="person">
-
 								<iframe  src="https://www.youtube.com/embed/udYnZppSghc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-								<h4>银行自动转账系统 使用 7. 自动点击硬件设备</h4>
-
+								<h4>PC 自动点击硬件设备</h4>
 							</div>
 						</div>
 
@@ -644,18 +485,22 @@
 						<div class="col-md-12 text-center fh5co-heading">
 							<h2>技术支持</h2>
 							<p>如果你有需要，或者遇到什么问题，可以联系我们! </p>
-
 						</div>
 						<div style="text-align: center;">
 							<div class="col-md-3">
 								<i class="icon-qq"></i>
 								<a href="" target="_blank">3609451924</a>
-
 							</div>
 							<div class="col-md-3">
 								<i class="icon-mail2"></i>
 								<a href="mailto:dingdingdongdong001@gmail.com" target="_blank">dingdingdongdong001@gmail.com</a>
 							</div>
+
+							<div class="col-md-3">
+								<i class="icon-television"></i>
+								<a href="https://t.me/orange_developer" target="_blank">telegram orange_develope</a>
+							</div>
+
 
 						</div>
 
@@ -670,7 +515,7 @@
 							<div class="col-md-6">
 								<p>
 									<small>
-										<br/>&copy; 2020 Bank Tool Project. All Rights Reserved.
+										<br/>&copy; 2020 Bank Tools Project. All Rights Reserved.
 										<br/>Designed by  Orange
 									</small>
 								</p>
