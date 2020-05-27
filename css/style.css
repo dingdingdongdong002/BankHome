@@ -6,11 +6,11 @@
   font-style: normal;
 }
 body {
-  font-family: "微软雅黑", "Open Sans", Arial, sans-serif;
+  font-family: "Open Sans", Arial,"微软雅黑", sans-serif;
   font-size: 18px;
   font-weight: 300;
   line-height: 1.8;
-  color: #949494;
+  color: #000000;
 }
 body.fh5co-overflow {
   overflow-x: hidden;
@@ -24,7 +24,7 @@ a {
   transition: 0.5s;
 }
 a:hover, a:focus, a:active {
-  color: #3da1a7;
+  color: #ba0d3a;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -40,7 +40,7 @@ p {
 .btn {
   margin-right: 4px;
   margin-bottom: 4px;
-  font-family: "微软雅黑", "Open Sans", Arial, sans-serif;
+  font-family:"Open Sans",  "微软雅黑", Arial, sans-serif;
   font-size: 12px;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -266,7 +266,7 @@ p {
 .fh5co-main-nav .fh5co-menu-1 a {
   padding: 35px 0;
   margin-right: 30px;
-  color: #ccc;
+  color: #000000;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 13px;
@@ -281,8 +281,9 @@ p {
   text-decoration: none;
 }
 .fh5co-main-nav .fh5co-menu-1 a.active {
-  font-weight: 400;
-  color: #000;
+  font-weight: bold;
+  color: #ff0000;
+
 }
 .fh5co-main-nav .fh5co-menu-1 {
   width: 100%;
@@ -294,7 +295,7 @@ p {
   text-align: center;
   width: 19.33%;
   font-size: 40px;
-  font-family: "微软雅黑", "Open Sans", Arial, sans-serif;
+  font-family:  "Open Sans","微软雅黑", Arial, sans-serif;
   font-weight: 700;
   font-style: italic;
 }
