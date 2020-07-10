@@ -19,6 +19,7 @@
 | order_no     | 订单号      |    |
 | trade_no    | 第三方平台订单号      |   |
 | cashierId     | 收款人id      |    |
+| status    | 订单状态      | 1：待支付； 2：支付完成；  |
 | sign    | 签名      |   参考文档签名 介绍  |
 
 
