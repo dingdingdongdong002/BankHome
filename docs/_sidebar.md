@@ -11,6 +11,8 @@
   * [4.中国银行_手机版](Channel/boc.md)
   * [5.农业银行_手机版](Channel/abchina.md)
   * [6.湖南农村信用社_手机版](Channel/hunan_bank.md)
+  * [7.平安银行_手机版](Channel/pingan_bank.md)
+
 
 * API
   * [1.下单接口](API/下单接口.md)
